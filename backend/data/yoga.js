@@ -9,7 +9,7 @@ const yoga = [
       "Gaze over your right hand and hold the pose."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=1sgL_57sxSOYROXtwxtEzAf8fAXgZORS-&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1sgL_57sxSOYROXtwxtEzAf8fAXgZORS-"
   },
   {
     name: "Tree Pose",
@@ -21,7 +21,7 @@ const yoga = [
       "Balance and hold the pose."
     ],
     duration: "30-60 seconds",
-    media: "https://drive.google.com/open?id=1mGv_YpAUijIj0eea2LtKlvnaec9v0nfT&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1mGv_YpAUijIj0eea2LtKlvnaec9v0nfT"
   },
   {
     name: "Supine Spinal Twist",
@@ -32,7 +32,7 @@ const yoga = [
       "Hold the pose, then switch sides."
     ],
     duration: "1-2 minutes per side",
-    media: "https://drive.google.com/open?id=1qi21fRCVt_-ujJwUG32EBEBUlvQ77Oe&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1qi21fRCVt_-ujJwUG32EBEBU-lvQ77Oe"
   },
   {
     name: "Standing Forward Bend",
@@ -43,7 +43,7 @@ const yoga = [
       "Hold the pose and breathe deeply."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=1pisK48uTDF_YcclCSczs5fCyzWVlkPQi&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1pisK48uTDF_YcclCSczs5fCyzWVlkPQi"
   },
   {
     name: "Seated Forward Bend Pose",
@@ -53,7 +53,7 @@ const yoga = [
       "Keep your spine long and hold the pose."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=10TYBdpf4fjt0ywwGquLYqwhVk7HkXLV&usp=drive_copy"
+    media: "https://drive.google.com/open?id=10-TYBdpf4fjt0ywwGquLYqwhVk7HkXLV"
   },
   {
     name: "Reclining Bound Angle Pose",
@@ -64,7 +64,7 @@ const yoga = [
       "Relax and hold the pose."
     ],
     duration: "2-5 minutes",
-    media: "https://drive.google.com/open?id=1XuBBIMlu1Uy89g7QQQOIPKkJp9nW1j&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1Xu-B-BIMlu1Uy89g7QQQOIPKkJp9nW1j"
   },
   {
     name: "Mountain Pose",
@@ -75,7 +75,7 @@ const yoga = [
       "Hold the pose and breathe deeply."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=1dB8rnlltcJMFAnPNwxZKP9lWAUd5GSQT&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1dB8rnlltcJMFAnPNwxZKP9lWAUd5GSQT"
   },
   {
     name: "Lion's Breath Yoga",
@@ -87,7 +87,7 @@ const yoga = [
       "Repeat several times."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=1qYx3RVYTU71ciV1BSMyP6MFDiQ65DJzz&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1qYx3RVYTU71ciV1BSMyP6MFDiQ65DJzz"
   },
   {
     name: "Legs-Up-The-Wall Pose",
@@ -97,7 +97,19 @@ const yoga = [
       "Relax and hold the pose."
     ],
     duration: "5-10 minutes",
-    media: "https://drive.google.com/open?id=1aGPrFi88EJwZoSqZUN0KoppcPMNmKS&usp=drive_copy"
+    media:"https://drive.google.com/open?id=1aGPrFi88EJwZoSqZUN0-KoppcPMNmK-S"
+  },
+  {
+    "name": "Eagle Pose (Garudasana)",
+    "instructions": [
+      "Stand tall with feet together.",
+      "Bend your knees slightly and lift your right foot, crossing it over your left thigh.",
+      "Hook your right foot behind your left calf if possible.",
+      "Extend arms forward, cross right arm over left, and press palms together.",
+      "Hold for 30 seconds, then switch sides."
+    ],
+    "media": "https://drive.google.com/open?id=1XihLfivyiQVETHxBMx6EVpoTja56feKK",
+    "duration": "30 seconds per side"
   },
   {
     name: "Hero Pose",
@@ -108,7 +120,7 @@ const yoga = [
       "Hold the pose and breathe deeply."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=1oPr1_fEJnsjNq_dlCsP6fBt3tIFYFZHf&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1oPr1_fEJnsjNq_dlCsP6fBt3tIFYFZHf"
   },
   {
     name: "Happy Baby Pose",
@@ -119,7 +131,7 @@ const yoga = [
       "Hold the pose and breathe deeply."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=14hUImSJxoCEAd9HHP2MSs7oor0_0HrRl&usp=drive_copy"
+    media: "https://drive.google.com/open?id=14hUImSJxoCEAd9HHP2MSs7oor0_0HrRl"
   },
   {
     name: "Downward-Facing Dog",
@@ -130,7 +142,7 @@ const yoga = [
       "Hold the pose and breathe deeply."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=1fmQl8sPLpYLRIUCX0ne5MxqhZI6w0Hwv&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1fmQl8sPLpYLRIUCX0ne5MxqhZI6w0Hwv"
   },
   {
     name: "Corpse Pose",
@@ -141,7 +153,7 @@ const yoga = [
       "Hold the pose and breathe deeply."
     ],
     duration: "5-10 minutes",
-    media: "https://drive.google.com/open?id=1JUPgoI69r_v7rvutaDw0Mo1c-l3zyEQV&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1JUPgoI69r_v7rvutaDw0Mo1c-l3zyEQV"
   },
   {
     name: "Child Pose",
@@ -152,7 +164,7 @@ const yoga = [
       "Hold the pose and breathe deeply."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=18Yq4x3bcVmqg5bRu-XPlEoTlRANOruMV&usp=drive_copy"
+    media: "https://drive.google.com/open?id=18Yq4x3bcVmqg5bRu-XPlEoTlRANOruMV"
   },
   {
     name: "Cat-Cow Pose",
@@ -163,7 +175,7 @@ const yoga = [
       "Repeat the sequence."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=1dipxjg9ny8oJBtbWyaBTZHRIKqBMuOlr&usp=drive_copy"
+    media: "https://drive.google.com/open?id=1dipxjg9ny8oJBtbWyaBTZHRIKqBMuOlr"
   },
   {
     name: "Butterfly Pose",
@@ -174,7 +186,7 @@ const yoga = [
       "Hold the pose and breathe deeply."
     ],
     duration: "1-2 minutes",
-    media: "https://drive.google.com/open?id=121s41wOCn8WD34DZYJ1RduKPu7O1YUzf&usp=drive_copy"
+    media: "https://drive.google.com/open?id=121s41wOCn8WD34DZYJ1RduKPu7O1YUzf"
   },
   {
     name: "Bridge Pose (Setu Bandhasana)",
