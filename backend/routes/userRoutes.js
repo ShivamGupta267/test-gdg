@@ -4,11 +4,14 @@ import passport from "passport";
 
 const router = express.Router();
 
+router.get("/route", (req , res)=> {
+    res.send("app is working")
+})
 // ✅ Signup Route
-router.post("/signup", Signup);
+router.post("/signup%0A", Signup);
 
 // ✅ Login Route
-router.post("/login", Login);
+router.post("/login%0A", Login);
 
 // ✅ Logout Route
 // router.get("/logout", logout);

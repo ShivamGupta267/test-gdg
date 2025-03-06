@@ -6,34 +6,39 @@ import User from "../models/user.js";
 const router = express.Router();
 
 // ✅ Signup Logic
-export const Signup = 
-    async(req, res, next) => {
-        try {
-            let { email, username, password } = req.body;
-            const newUser = new User({ email, username }); // ✅ Create a User instance
-            const result = await User.register(newUser, password); // ✅ Register user
-            console.log("Registered User:", result);
-    
-            // req.login(result, (err) => {
-            //     if (err) return next(err);
-            //     req.flash("success", "Welcome to TravelMingle!");
-            //     return res.redirect("/listing"); // ✅ Moved inside callback
-            // });
-    
-        } catch (err) {
-            // req.flash("error", err.message);
-            return res.redirect("/user/signup");
-        }
+export const Signup = async (req, res) => {
+    try {
+        let { email, username, password } = req.body;
+        const newUser = new User({ email, username });
+        const result = await User.register(newUser, password);
+        console.log("Registered User:", result);
+
+        return res.status(201).json({
+            success: true,
+            message: "User registered successfully",
+            user: result
+        });
+
+    } catch (err) {
+        console.error("Signup Error:", err);
+        return res.status(400).json({ success: false, message: err.message });
     }
+};
+
 
 
 // ✅ Login Logic
-export const Login = 
-    async(req, res, next) => { 
-    passport.authenticate("local", { failureFlash: true }),
-    (req, res) => {
-        res.json({ success: true, message: "Logged in successfully", user: req.user });
-    }}
+export const Login = (req, res, next) => {
+    passport.authenticate("local", (err, user, info) => {
+        if (err) return next(err);
+        if (!user) return res.status(401).json({ success: false, message: info.message });
+
+        req.login(user, (err) => {
+            if (err) return next(err);
+            return res.json({ success: true, message: "Logged in successfully", user });
+        });
+    })(req, res, next);
+};
 
 
 // ✅ Logout Route

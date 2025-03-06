@@ -1,17 +1,14 @@
+
 import mongoose from "mongoose";
-
 import passportLocalMongoose from "passport-local-mongoose";
+import Progress from "./progress.js"; // ✅ Import Progress Model
 
-const userSchema = new mongoose.Schema({
-    email: {
-        type: String,
-        required: true,
-    },
+const UserSchema = new mongoose.Schema({
+    email: { type: String, required: true, unique: true },
+    progress: { type: mongoose.Schema.Types.ObjectId, ref: "Progress" }, // ✅ Link to Progress
 });
 
-userSchema.plugin(passportLocalMongoose);
+UserSchema.plugin(passportLocalMongoose);
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", UserSchema);
 export default User;
-
-

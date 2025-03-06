@@ -7,12 +7,13 @@ import cors from "cors"; // ✅ Allow frontend requests
 import userRoutes from "./routes/userRoutes.js";
 import assessmentRoutes from "./routes/assessmentRoutes.js"; // ✅ If using assessments
 import flash from "connect-flash";
-import localStrategy from "passport-local" 
+import { Strategy as LocalStrategy } from "passport-local";
 import passport from "passport";
 import User from "./models/user.js";
+import connectDB from "./config/db.js";
 
 
-
+connectDB();
 dotenv.config();
 const app = express();
 const sessionOptions = {
@@ -29,9 +30,10 @@ app.use(session(sessionOptions))
 app.use(flash())
 app.use(passport.initialize())
 app.use(passport.session())
-passport.use(new localStrategy(User.authenticate()))
+passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
+const PORT = process.env.PORT || 5000;
 
 
 
@@ -46,22 +48,11 @@ app.use(
 
 
 
+app.use("/assessment", assessmentRoutes); // If using assessments
+app.use("/users", userRoutes);
 
 
-// ✅ API Routes
-app.use("/api/users", userRoutes);
-app.use("/api/assessment", assessmentRoutes); // If using assessments
 
-// ✅ Test Route (Check if backend is working)
-app.get("/", (req, res) => {
-  res.send("Backend is running!");
-});
 
-// ✅ Connect to MongoDB
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("✅ MongoDB Connected"))
-  .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
