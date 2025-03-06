@@ -12,6 +12,7 @@ import passport from "passport";
 import User from "./models/user.js";
 import connectDB from "./config/db.js";
 
+import YogaPose from "./models/yoga.js";
 
 connectDB();
 dotenv.config();
@@ -23,17 +24,20 @@ const sessionOptions = {
 }
 
 // ✅ Middleware
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(session(sessionOptions))
 app.use(flash())
+
 app.use(passport.initialize())
 app.use(passport.session())
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
 const PORT = process.env.PORT || 5000;
+
 
 
 
@@ -52,6 +56,15 @@ app.use("/assessment", assessmentRoutes); // If using assessments
 app.use("/users", userRoutes);
 
 
+
+app.get("/yoga-poses", async (req, res) => {
+  try {
+      const poses = await YogaPose.find();
+      res.send(poses);  // Using res.send()
+  } catch (error) {
+      res.status(500).send("Server error");
+  }
+});
 
 
 

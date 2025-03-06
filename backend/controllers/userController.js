@@ -1,9 +1,6 @@
-import express from "express";
+
 import passport from "passport";
 import User from "../models/user.js";
-
-
-const router = express.Router();
 
 // ✅ Signup Logic
 export const Signup = async (req, res) => {

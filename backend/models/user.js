@@ -1,7 +1,7 @@
 
 import mongoose from "mongoose";
 import passportLocalMongoose from "passport-local-mongoose";
-import Progress from "./progress.js"; // ✅ Import Progress Model
+
 
 const UserSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true },
