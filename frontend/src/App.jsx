@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Signup from "./components/Signup";
 // import Login from "./components/Login";
 import YogaPoses from "./components/YogaPose"
+import SleepStory from "./components/sleepStory";
 
 function App() {
   // return (
@@ -17,8 +18,9 @@ function App() {
   // );
   return (
     <div>
-        <h1>Welcome to Yoga App</h1>
-        <YogaPoses />
+        {/* <h1>Welcome to Yoga App</h1>
+        <YogaPoses /> */}
+        <SleepStory/>
     </div>
 );
 }

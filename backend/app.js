@@ -13,6 +13,7 @@ import User from "./models/user.js";
 import connectDB from "./config/db.js";
 
 import YogaPose from "./models/yoga.js";
+import sleepStoryRoute from "./routes/sleepStoryRoute.js"
 
 connectDB();
 dotenv.config();
@@ -54,6 +55,7 @@ app.use(
 
 app.use("/assessment", assessmentRoutes); // If using assessments
 app.use("/users", userRoutes);
+app.use("/api/sleepstory", sleepStoryRoute);
 
 
 

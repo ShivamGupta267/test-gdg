@@ -8,6 +8,7 @@ const yoga = [
       "Bend your right knee over your right ankle, keeping your left leg straight.",
       "Gaze over your right hand and hold the pose."
     ],
+    category: "standing", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=1sgL_57sxSOYROXtwxtEzAf8fAXgZORS-"
   },
@@ -20,6 +21,7 @@ const yoga = [
       "Bring your hands together in prayer position at your chest.",
       "Balance and hold the pose."
     ],
+    category: "standing", 
     duration: "30-60 seconds",
     media: "https://drive.google.com/open?id=1mGv_YpAUijIj0eea2LtKlvnaec9v0nfT"
   },
@@ -31,6 +33,7 @@ const yoga = [
       "Slowly lower both knees to the right side, keeping your shoulders on the ground.",
       "Hold the pose, then switch sides."
     ],
+    category: "lying-down", 
     duration: "1-2 minutes per side",
     media: "https://drive.google.com/open?id=1qi21fRCVt_-ujJwUG32EBEBU-lvQ77Oe"
   },
@@ -42,6 +45,7 @@ const yoga = [
       "Allow your head and arms to hang down.",
       "Hold the pose and breathe deeply."
     ],
+    category: "standing", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=1pisK48uTDF_YcclCSczs5fCyzWVlkPQi"
   },
@@ -52,6 +56,7 @@ const yoga = [
       "Hinge forward at your hips, reaching for your feet or shins.",
       "Keep your spine long and hold the pose."
     ],
+    category: "seated", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=10-TYBdpf4fjt0ywwGquLYqwhVk7HkXLV"
   },
@@ -63,6 +68,7 @@ const yoga = [
       "Place your arms by your sides with palms facing up.",
       "Relax and hold the pose."
     ],
+    category: "lying-down", 
     duration: "2-5 minutes",
     media: "https://drive.google.com/open?id=1Xu-B-BIMlu1Uy89g7QQQOIPKkJp9nW1j"
   },
@@ -74,6 +80,7 @@ const yoga = [
       "Broaden your shoulders and reach your arms overhead.",
       "Hold the pose and breathe deeply."
     ],
+    category: "standing", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=1dB8rnlltcJMFAnPNwxZKP9lWAUd5GSQT"
   },
@@ -86,6 +93,7 @@ const yoga = [
       "Open your mouth wide, stick out your tongue, and exhale forcefully while making a 'ha' sound.",
       "Repeat several times."
     ],
+    category: "seated", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=1qYx3RVYTU71ciV1BSMyP6MFDiQ65DJzz"
   },
@@ -96,18 +104,20 @@ const yoga = [
       "Rest your arms by your sides, palms facing up.",
       "Relax and hold the pose."
     ],
+    category: "lying-down", 
     duration: "5-10 minutes",
     media:"https://drive.google.com/open?id=1aGPrFi88EJwZoSqZUN0-KoppcPMNmK-S"
   },
   {
-    "name": "Eagle Pose (Garudasana)",
-    "instructions": [
+    name: "Eagle Pose (Garudasana)",
+    instructions: [
       "Stand tall with feet together.",
       "Bend your knees slightly and lift your right foot, crossing it over your left thigh.",
       "Hook your right foot behind your left calf if possible.",
       "Extend arms forward, cross right arm over left, and press palms together.",
       "Hold for 30 seconds, then switch sides."
     ],
+    category: "standing", 
     "media": "https://drive.google.com/open?id=1XihLfivyiQVETHxBMx6EVpoTja56feKK",
     "duration": "30 seconds per side"
   },
@@ -119,6 +129,7 @@ const yoga = [
       "Rest your hands on your thighs.",
       "Hold the pose and breathe deeply."
     ],
+    category: "seated", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=1oPr1_fEJnsjNq_dlCsP6fBt3tIFYFZHf"
   },
@@ -130,6 +141,7 @@ const yoga = [
       "Gently pull your knees towards your armpits.",
       "Hold the pose and breathe deeply."
     ],
+    category: "lying-down", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=14hUImSJxoCEAd9HHP2MSs7oor0_0HrRl"
   },
@@ -141,6 +153,7 @@ const yoga = [
       "Press your heels towards the floor.",
       "Hold the pose and breathe deeply."
     ],
+    category: "standing", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=1fmQl8sPLpYLRIUCX0ne5MxqhZI6w0Hwv"
   },
@@ -152,6 +165,7 @@ const yoga = [
       "Close your eyes and relax.",
       "Hold the pose and breathe deeply."
     ],
+    category: "lying-down", 
     duration: "5-10 minutes",
     media: "https://drive.google.com/open?id=1JUPgoI69r_v7rvutaDw0Mo1c-l3zyEQV"
   },
@@ -163,6 +177,7 @@ const yoga = [
       "Rest your forehead on the floor.",
       "Hold the pose and breathe deeply."
     ],
+    category: "seated", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=18Yq4x3bcVmqg5bRu-XPlEoTlRANOruMV"
   },
@@ -174,6 +189,7 @@ const yoga = [
       "Exhale, round your spine and tuck your chin for Cow Pose.",
       "Repeat the sequence."
     ],
+    category: "seated", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=1dipxjg9ny8oJBtbWyaBTZHRIKqBMuOlr"
   },
@@ -185,6 +201,7 @@ const yoga = [
       "Gently press your knees towards the floor.",
       "Hold the pose and breathe deeply."
     ],
+    category: "seated", 
     duration: "1-2 minutes",
     media: "https://drive.google.com/open?id=121s41wOCn8WD34DZYJ1RduKPu7O1YUzf"
   },
@@ -196,17 +213,20 @@ const yoga = [
       "Interlace your fingers under your back and press arms down for support.",
       "Hold for 30 seconds, then slowly lower back down."
     ],
-    duration: "30 seconds",
+    category: "lying-down", 
+    duration: "60 seconds",
     media: "https://drive.google.com/open?id=18qqc8UwHG5nDnD0C5SwlOhMNaYx283uw"
   },
   {
   name: "Bee Breath (Bhramari Pranayama)",
     instructions: [
-      "Sit in a comfortable position with a straight back.",
-      "Close your eyes and take a deep breath in.",
-      "As you exhale, make a humming sound like a bee.",
-      "Repeat 5 times."
+      "Choose a comfortable seated position.",
+      "Close your eyes and relax your face.",
+      "Place your first fingers on the tragus cartilage that partially covers your ear canal.",
+      "Inhale and gently press your fingers into the cartilage as you exhale.",
+      "Keeping your mouth closed, make a loud humming sound."
     ],
+    category: "breathing", 
     duration: "5 repetitions",
     media: "https://drive.google.com/open?id=11KC0WbKuLEq_pRvRyFJfmiOUlbzCZLCg"
   },
@@ -219,8 +239,23 @@ const yoga = [
       "Inhale through the right nostril, then switch and exhale through the left.",
       "Repeat for 5 cycles."
     ],
+    category: "breathing", 
     duration: "5 minutes",
     media: "https://drive.google.com/open?id=10VM1bVzQFD02Roya0bU5IRUvtN2FM3sy",
+  },
+  {
+    name: "Equal Breathing (Sama Vritti)",
+    category: "breathing",
+    steps: [
+      "Find a comfortable position (sitting or lying down).",
+      "Inhale deeply through your nose for a count of 4.",
+      "Hold your breath for a count of 4.",
+      "Exhale slowly through your nose for a count of 4.",
+      "Pause for a count of 4 before inhaling again.",
+      "Repeat this cycle for 3-5 minutes."
+    ],
+    duration: "5 min",
+    media: "https://drive.google.com/open?id=1ym7_w4-p6-74etyHHbLr7hezaR41UPR0"
   }
 ]
        
